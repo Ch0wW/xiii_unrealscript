@@ -1,0 +1,272 @@
+//-----------------------------------------------------------
+//
+//-----------------------------------------------------------
+class HelicoExploEmitter extends Emitter;
+
+//      FadeInEndTime=0.5.000000
+/*
+    Begin Object Class=SpriteEmitter Name=HelicoExploEmitterA
+        UseColorScale=True
+        FadeOut=True
+        RespawnDeadParticles=False
+        SpinParticles=True
+        UseSizeScale=True
+        UseRegularSizeScale=False
+        UniformSize=False
+        AutomaticInitialSpawning=False
+        Initialized=True
+        ColorScale(0)=(Color=(B=255,G=255,R=255))
+        ColorScale(1)=(relativetime=0.900000,Color=(G=160,R=180))
+        ColorScale(2)=(relativetime=1.000000,Color=(R=180))
+        FadeOutStartTime=0.500000
+        MaxParticles=6
+        UseRotationFrom=PTRS_Actor
+        StartSpinRange=(X=(Min=-0.100000,Max=0.100000))
+        SizeScale(1)=(relativetime=0.100000,RelativeSize=25.000000)
+        SizeScale(2)=(relativetime=1.500000)
+        StartSizeRange=(Y=(Min=25.000000,Max=25.000000))
+        InitialParticlesPerSecond=60.000000
+        Texture=Texture'XIIICine.effets.Explosion'
+        LifetimeRange=(Min=5.000000,Max=5.000000)
+        Name="SpriteEmitter12"
+    End Object
+    Emitters(0)=SpriteEmitter'HelicoExploEmitterA'
+    Begin Object Class=SpriteEmitter Name=HelicoExploEmitterB
+        FadeOut=True
+        RespawnDeadParticles=False
+        UseSizeScale=True
+        UseRegularSizeScale=False
+        AutomaticInitialSpawning=False
+        Initialized=True
+        AllParticlesDead=True
+        FadeOutStartTime=1.000000
+        MaxParticles=1
+        StartLocationOffset=(Z=60.000000)
+        StartLocationRange=(Z=(Min=100.000000,Max=100.000000))
+        UseRotationFrom=PTRS_Actor
+        SizeScale(1)=(relativetime=0.300000,RelativeSize=1.200000)
+        SizeScale(2)=(relativetime=1.000000)
+        StartSizeRange=(X=(Min=400.000000,Max=400.000000),Y=(Min=400.000000,Max=400.000000),Z=(Min=400.000000,Max=400.000000))
+        InitialParticlesPerSecond=5000.000000
+        DrawStyle=PTDS_AlphaBlend
+        Texture=Texture'XIIICine.effets.Baommm'
+        TextureUSubdivisions=1
+        TextureVSubdivisions=1
+        LifetimeRange=(Min=1.500000,Max=1.500000)
+        Name="SpriteEmitter48"
+    End Object
+	Emitters(1)=SpriteEmitter'HelicoExploEmitterB'   
+*/
+
+
+defaultproperties
+{
+     Begin Object Class=SpriteEmitter Name=HelicoExploEmitterA
+         Acceleration=(X=20.000000,Y=20.000000,Z=100.000000)
+         FadeOut=True
+         RespawnDeadParticles=False
+         SpinParticles=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         AutomaticInitialSpawning=False
+         OnceTextureAnim=True
+         Initialized=True
+         FadeOutStartTime=1.000000
+         MaxParticles=6
+         StartLocationRange=(X=(Min=-100.000000,Max=100.000000),Y=(Min=-100.000000,Max=100.000000),Z=(Min=-20.000000,Max=20.000000))
+         StartLocationShape=PTLS_Sphere
+         SphereRadiusRange=(Min=256.000000,Max=256.000000)
+         SpinsPerSecondRange=(X=(Max=0.200000),Y=(Min=-0.200000,Max=0.200000))
+         SizeScale(0)=(relativetime=0.100000)
+         SizeScale(1)=(relativetime=0.200000,RelativeSize=3.000000)
+         SizeScale(2)=(relativetime=0.300000,RelativeSize=2.000000)
+         SizeScale(3)=(relativetime=1.000000,RelativeSize=1.000000)
+         StartSizeRange=(X=(Min=400.000000,Max=500.000000),Y=(Min=400.000000,Max=500.000000))
+         InitialParticlesPerSecond=20.000000
+         Texture=Texture'XIIICine.extinct_exploAD'
+         SecondsBeforeInactive=10000.000000
+         LifetimeRange=(Min=3.000000,Max=3.000000)
+         StartVelocityRange=(X=(Min=-100.000000,Max=100.000000),Y=(Min=-100.000000,Max=100.000000))
+         Name="HelicoExploEmitterA"
+     End Object
+     Emitters(0)=SpriteEmitter'XIDCine.HelicoExploEmitter.HelicoExploEmitterA'
+     Begin Object Class=SpriteEmitter Name=HelicoExploEmitterB
+         Acceleration=(X=5.000000,Y=5.000000,Z=-1000.000000)
+         UseColorScale=True
+         FadeOut=True
+         RespawnDeadParticles=False
+         SpinParticles=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         AutomaticInitialSpawning=False
+         Initialized=True
+         ColorScale(0)=(Color=(B=255,G=255,R=255))
+         ColorScale(1)=(relativetime=0.400000,Color=(B=128,G=255,R=255))
+         ColorScale(2)=(relativetime=1.000000,Color=(B=112,G=112,R=112))
+         FadeOutStartTime=3.000000
+         MaxParticles=20
+         StartLocationShape=PTLS_Sphere
+         SphereRadiusRange=(Min=100.000000,Max=100.000000)
+         SpinsPerSecondRange=(X=(Min=-1.000000,Max=1.000000),Y=(Min=-1.000000,Max=1.000000))
+         SizeScale(0)=(RelativeSize=20.000000)
+         SizeScale(1)=(relativetime=0.100000,RelativeSize=0.400000)
+         SizeScale(2)=(relativetime=0.300000,RelativeSize=0.800000)
+         SizeScale(3)=(relativetime=0.700000,RelativeSize=0.300000)
+         SizeScale(4)=(relativetime=1.000000,RelativeSize=0.100000)
+         StartSizeRange=(X=(Min=25.000000),Y=(Min=25.000000),Z=(Min=25.000000))
+         InitialParticlesPerSecond=500.000000
+         DrawStyle=PTDS_Brighten
+         Texture=Texture'XIIICine.effets.pyro1'
+         SecondsBeforeInactive=10000.000000
+         LifetimeRange=(Min=2.000000)
+         InitialDelayRange=(Min=0.700000,Max=0.700000)
+         StartVelocityRange=(X=(Min=-3000.000000,Max=3000.000000),Y=(Min=-3000.000000,Max=3000.000000),Z=(Min=1000.000000,Max=3000.000000))
+         VelocityLossRange=(X=(Max=1.000000),Y=(Max=1.000000),Z=(Min=1.000000,Max=1.000000))
+         Name="HelicoExploEmitterB"
+     End Object
+     Emitters(1)=SpriteEmitter'XIDCine.HelicoExploEmitter.HelicoExploEmitterB'
+     Begin Object Class=SpriteEmitter Name=HelicoExploEmitterC
+         UseColorScale=True
+         FadeOut=True
+         RespawnDeadParticles=False
+         SpinParticles=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         AutomaticInitialSpawning=False
+         Initialized=True
+         ColorScale(0)=(Color=(B=64,G=128,R=255))
+         ColorScale(1)=(relativetime=0.100000,Color=(G=255,R=255))
+         ColorScale(2)=(relativetime=0.150000,Color=(R=255))
+         ColorScale(3)=(relativetime=0.200000,Color=(B=128,G=255,R=255))
+         ColorScale(4)=(relativetime=0.250000,Color=(R=255))
+         ColorScale(5)=(relativetime=0.300000,Color=(B=128,G=255,R=255))
+         ColorScale(6)=(relativetime=1.000000,Color=(B=255,G=255,R=255))
+         FadeOutStartTime=0.200000
+         MaxParticles=1
+         SpinsPerSecondRange=(X=(Max=0.250000),Y=(Max=0.250000))
+         SizeScale(0)=(RelativeSize=1.000000)
+         SizeScale(1)=(relativetime=0.500000,RelativeSize=20.000000)
+         SizeScale(2)=(relativetime=1.000000,RelativeSize=5.000000)
+         StartSizeRange=(X=(Min=150.000000,Max=200.000000),Y=(Min=150.000000,Max=200.000000),Z=(Min=150.000000,Max=200.000000))
+         InitialParticlesPerSecond=50.000000
+         DrawStyle=PTDS_Brighten
+         Texture=Texture'XIIICine.extinct_exploAD'
+         SecondsBeforeInactive=10000.000000
+         LifetimeRange=(Min=0.300000,Max=0.300000)
+         InitialDelayRange=(Min=0.700000,Max=0.700000)
+         Name="HelicoExploEmitterC"
+     End Object
+     Emitters(2)=SpriteEmitter'XIDCine.HelicoExploEmitter.HelicoExploEmitterC'
+     Begin Object Class=SpriteEmitter Name=HelicoExploEmitterD
+         FadeOut=True
+         RespawnDeadParticles=False
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         Initialized=True
+         FadeOutStartTime=0.100000
+         StartLocationShape=PTLS_Sphere
+         SphereRadiusRange=(Min=256.000000,Max=256.000000)
+         SizeScale(0)=(RelativeSize=1.000000)
+         SizeScale(1)=(relativetime=0.100000,RelativeSize=7.000000)
+         SizeScale(2)=(relativetime=0.200000,RelativeSize=0.100000)
+         StartSizeRange=(X=(Min=200.000000,Max=200.000000),Y=(Min=200.000000,Max=200.000000),Z=(Min=200.000000,Max=200.000000))
+         InitialParticlesPerSecond=10.000000
+         DrawStyle=PTDS_Brighten
+         Texture=Texture'XIIICine.effets.eclairblanc'
+         SecondsBeforeInactive=10000.000000
+         LifetimeRange=(Min=0.500000,Max=0.500000)
+         Name="HelicoExploEmitterD"
+     End Object
+     Emitters(3)=SpriteEmitter'XIDCine.HelicoExploEmitter.HelicoExploEmitterD'
+     Begin Object Class=SpriteEmitter Name=HelicoExploEmitterE
+         FadeOut=True
+         RespawnDeadParticles=False
+         DisableFogging=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         AutomaticInitialSpawning=False
+         Initialized=True
+         RealDisableFogging=True
+         FadeOutFactor=(W=2.000000)
+         MaxParticles=2
+         StartLocationOffset=(X=-100.000000,Z=800.000000)
+         SizeScale(0)=(RelativeSize=2.000000)
+         SizeScale(1)=(relativetime=0.200000,RelativeSize=12.000000)
+         SizeScale(2)=(relativetime=0.400000,RelativeSize=10.000000)
+         SizeScale(3)=(relativetime=0.450000,RelativeSize=6.000000)
+         SizeScale(4)=(relativetime=1.000000,RelativeSize=6.000000)
+         StartSizeRange=(X=(Min=140.000000,Max=150.000000),Y=(Min=140.000000,Max=150.000000),Z=(Min=145.000000,Max=150.000000))
+         InitialParticlesPerSecond=20.000000
+         DrawStyle=PTDS_AlphaBlend
+         Texture=Texture'XIIICine.effets.Baommm'
+         SecondsBeforeInactive=10000.000000
+         LifetimeRange=(Min=0.900000,Max=0.900000)
+         InitialDelayRange=(Min=0.500000,Max=0.500000)
+         Name="HelicoExploEmitterE"
+     End Object
+     Emitters(4)=SpriteEmitter'XIDCine.HelicoExploEmitter.HelicoExploEmitterE'
+     Begin Object Class=SpriteEmitter Name=HelicoExploEmitterF
+         Acceleration=(Z=100.000000)
+         FadeOut=True
+         FadeIn=True
+         RespawnDeadParticles=False
+         SpinParticles=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         AutomaticInitialSpawning=False
+         Initialized=True
+         FadeOutStartTime=4.000000
+         FadeInEndTime=2.500000
+         MaxParticles=30
+         StartLocationOffset=(Z=-500.000000)
+         StartLocationShape=PTLS_Sphere
+         SphereRadiusRange=(Min=512.000000,Max=512.000000)
+         SpinsPerSecondRange=(X=(Min=-0.200000,Max=0.200000),Y=(Min=-0.200000,Max=0.200000))
+         SizeScale(0)=(RelativeSize=1.000000)
+         SizeScale(1)=(relativetime=0.100000,RelativeSize=6.000000)
+         SizeScale(2)=(relativetime=0.700000,RelativeSize=4.000000)
+         SizeScale(3)=(relativetime=1.000000,RelativeSize=6.000000)
+         StartSizeRange=(X=(Max=200.000000),Y=(Max=200.000000),Z=(Max=200.000000))
+         InitialParticlesPerSecond=100.000000
+         DrawStyle=PTDS_AlphaBlend
+         Texture=Texture'XIIICine.effets.mist3'
+         SecondsBeforeInactive=10000.000000
+         LifetimeRange=(Min=6.000000,Max=6.000000)
+         InitialDelayRange=(Min=0.500000,Max=0.500000)
+         StartVelocityRange=(X=(Min=-1000.000000,Max=1000.000000),Y=(Min=-1000.000000,Max=1000.000000),Z=(Min=-200.000000,Max=-200.000000))
+         MaxAbsVelocity=(X=500.000000,Y=500.000000)
+         VelocityLossRange=(X=(Min=1.000000,Max=1.000000),Y=(Min=1.000000,Max=1.000000))
+         Name="HelicoExploEmitterF"
+     End Object
+     Emitters(5)=SpriteEmitter'XIDCine.HelicoExploEmitter.HelicoExploEmitterF'
+     Begin Object Class=MeshEmitter Name=HelicoExploEmitterG
+         StaticMesh=StaticMesh'Meshes_Vehicules.roue_deco'
+         Acceleration=(X=-1000.000000,Y=500.000000,Z=-1300.000000)
+         UseCollision=True
+         UseColorScale=True
+         RespawnDeadParticles=False
+         SpinParticles=True
+         DampRotation=True
+         AutomaticInitialSpawning=False
+         Initialized=True
+         DampingFactorRange=(X=(Min=0.450000,Max=0.450000),Y=(Min=0.300000,Max=0.300000),Z=(Min=0.550000,Max=0.550000))
+         MaxCollisions=(Min=5.000000,Max=5.000000)
+         ColorScale(0)=(Color=(G=255,R=255))
+         ColorScale(1)=(relativetime=1.000000)
+         MaxParticles=1
+         SpinsPerSecondRange=(X=(Min=1.000000,Max=1.000000),Y=(Min=2.000000,Max=2.000000),Z=(Min=2.000000,Max=2.000000))
+         RotationDampingFactorRange=(X=(Min=0.000100,Max=0.000100),Y=(Min=0.000100,Max=0.000100))
+         StartSizeRange=(X=(Min=0.600000,Max=0.600000),Y=(Min=0.500000,Max=0.500000),Z=(Min=0.500000,Max=0.500000))
+         InitialParticlesPerSecond=10.000000
+         SecondsBeforeInactive=10000.000000
+         LifetimeRange=(Min=6.000000,Max=6.000000)
+         InitialDelayRange=(Min=1.000000,Max=1.000000)
+         StartVelocityRange=(Z=(Min=400.000000,Max=400.000000))
+         VelocityLossRange=(X=(Min=0.100000,Max=0.100000),Y=(Min=0.250000,Max=0.250000),Z=(Min=0.100000,Max=0.100000))
+         Name="HelicoExploEmitterG"
+     End Object
+     Emitters(6)=MeshEmitter'XIDCine.HelicoExploEmitter.HelicoExploEmitterG'
+     DrawScale=4.000000
+     CollisionRadius=4000.000000
+     CollisionHeight=1000.000000
+}

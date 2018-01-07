@@ -1,0 +1,265 @@
+//-----------------------------------------------------------
+//
+//-----------------------------------------------------------
+class Prock03FioleExploEmitter extends Emitter;
+
+
+
+defaultproperties
+{
+     Begin Object Class=SpriteEmitter Name=Prock03FioleExploEmitterA
+         UseDirectionAs=PTDU_Normal
+         UseColorScale=True
+         RespawnDeadParticles=False
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         AutomaticInitialSpawning=False
+         Initialized=True
+         ColorScale(0)=(Color=(B=255,G=255,R=255))
+         ColorScale(1)=(relativetime=0.200000,Color=(B=97,G=173,R=175))
+         ColorScale(2)=(relativetime=1.000000,Color=(B=255,G=255,R=255))
+         MaxParticles=1
+         SizeScale(1)=(relativetime=0.200000,RelativeSize=6.000000)
+         SizeScale(2)=(relativetime=0.600000,RelativeSize=5.000000)
+         SizeScale(3)=(relativetime=1.000000)
+         StartSizeRange=(X=(Min=30.000000,Max=30.000000),Y=(Min=30.000000,Max=30.000000))
+         InitialParticlesPerSecond=1000.000000
+         Texture=Texture'XIIICine.effets.eclairblanc'
+         LifetimeRange=(Min=0.500000,Max=0.500000)
+         Name="Prock03FioleExploEmitterA"
+     End Object
+     Emitters(0)=SpriteEmitter'XIDPawn.Prock03FioleExploEmitter.Prock03FioleExploEmitterA'
+     Begin Object Class=SpriteEmitter Name=Prock03FioleExploEmitterB
+         Acceleration=(Z=10.000000)
+         UseColorScale=True
+         FadeOut=True
+         FadeIn=True
+         RespawnDeadParticles=False
+         SpinParticles=True
+         AutomaticInitialSpawning=False
+         Initialized=True
+         ColorScale(0)=(Color=(B=255,G=255,R=255))
+         ColorScale(1)=(relativetime=0.600000,Color=(B=117,G=152,R=155))
+         ColorScale(2)=(relativetime=1.000000,Color=(B=128,G=128,R=128))
+         FadeOutStartTime=4.000000
+         FadeInEndTime=1.000000
+         MaxParticles=10
+         SpinsPerSecondRange=(X=(Min=-0.100000,Max=0.100000),Y=(Min=-0.100000,Max=0.100000))
+         StartSizeRange=(X=(Min=50.000000,Max=75.000000),Y=(Min=50.000000,Max=75.000000))
+         InitialParticlesPerSecond=100.000000
+         Texture=Texture'XIIICine.effets.mist2'
+         LifetimeRange=(Min=5.000000,Max=5.000000)
+         InitialDelayRange=(Min=0.700000,Max=0.700000)
+         StartVelocityRange=(X=(Min=-50.000000,Max=50.000000),Y=(Min=-50.000000,Max=50.000000),Z=(Min=5.000000,Max=10.000000))
+         VelocityLossRange=(X=(Min=0.500000,Max=0.500000),Y=(Min=0.500000,Max=0.500000))
+         Name="Prock03FioleExploEmitterB"
+     End Object
+     Emitters(1)=SpriteEmitter'XIDPawn.Prock03FioleExploEmitter.Prock03FioleExploEmitterB'
+     Begin Object Class=SpriteEmitter Name=Prock03FioleExploEmitterC
+         Acceleration=(X=10.000000,Y=10.000000,Z=-280.000000)
+         UseCollision=True
+         UseColorScale=True
+         FadeOut=True
+         RespawnDeadParticles=False
+         SpinParticles=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         AutomaticInitialSpawning=False
+         Initialized=True
+         DampingFactorRange=(Z=(Min=-1.000000,Max=-1.000000))
+         ColorScale(0)=(Color=(B=255,G=255,R=255))
+         ColorScale(1)=(relativetime=0.200000,Color=(B=97,G=173,R=175))
+         ColorScale(2)=(relativetime=1.000000,Color=(B=97,G=173,R=175))
+         FadeOutStartTime=2.000000
+         MaxParticles=20
+         StartLocationOffset=(Z=50.000000)
+         StartLocationRange=(X=(Min=-20.000000,Max=20.000000),Y=(Min=-20.000000,Max=20.000000))
+         SpinsPerSecondRange=(X=(Min=0.500000,Max=0.500000),Y=(Min=0.500000,Max=0.500000))
+         SizeScale(1)=(relativetime=0.100000,RelativeSize=1.000000)
+         SizeScale(2)=(relativetime=1.000000,RelativeSize=0.200000)
+         StartSizeRange=(X=(Min=2.000000,Max=8.000000),Y=(Min=2.000000,Max=8.000000))
+         InitialParticlesPerSecond=100.000000
+         Texture=Texture'XIIICine.effets.BlobA'
+         LifetimeRange=(Min=6.000000,Max=10.000000)
+         StartVelocityRange=(X=(Min=-100.000000,Max=100.000000),Y=(Min=-100.000000,Max=100.000000),Z=(Min=200.000000,Max=300.000000))
+         VelocityLossRange=(X=(Min=1.000000,Max=1.000000),Y=(Min=1.000000,Max=1.000000))
+         Name="Prock03FioleExploEmitterC"
+     End Object
+     Emitters(2)=SpriteEmitter'XIDPawn.Prock03FioleExploEmitter.Prock03FioleExploEmitterC'
+     Begin Object Class=SpriteEmitter Name=Prock03FioleExploEmitterD
+         UseColorScale=True
+         FadeOut=True
+         ResetAfterChange=True
+         RespawnDeadParticles=False
+         SpinParticles=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         AutomaticInitialSpawning=False
+         Initialized=True
+         ColorScale(0)=(Color=(B=212,G=212,R=212))
+         ColorScale(1)=(relativetime=0.200000,Color=(B=97,G=173,R=175))
+         ColorScale(2)=(relativetime=1.000000,Color=(B=69,G=69,R=69))
+         FadeOutStartTime=1.000000
+         MaxParticles=2
+         SpinCCWorCW=(X=1.000000,Y=1.000000)
+         SpinsPerSecondRange=(X=(Min=0.100000,Max=0.100000),Y=(Min=0.100000,Max=0.100000))
+         SizeScale(1)=(relativetime=0.100000,RelativeSize=5.000000)
+         SizeScale(2)=(relativetime=0.700000,RelativeSize=3.000000)
+         SizeScale(3)=(relativetime=1.000000,RelativeSize=2.000000)
+         StartSizeRange=(X=(Min=8.000000,Max=18.000000),Y=(Min=8.000000,Max=18.000000))
+         InitialParticlesPerSecond=10.000000
+         Texture=Texture'XIIICine.effets.explogrenadeB'
+         LifetimeRange=(Min=3.000000,Max=3.000000)
+         Name="Prock03FioleExploEmitterD"
+     End Object
+     Emitters(3)=SpriteEmitter'XIDPawn.Prock03FioleExploEmitter.Prock03FioleExploEmitterD'
+     Begin Object Class=SpriteEmitter Name=Prock03FioleExploEmitterE
+         UseDirectionAs=PTDU_Normal
+         UseColorScale=True
+         FadeOut=True
+         RespawnDeadParticles=False
+         SpinParticles=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         AutomaticInitialSpawning=False
+         Initialized=True
+         ColorScale(0)=(Color=(B=255,G=255,R=255))
+         ColorScale(1)=(Color=(B=97,G=173,R=175))
+         ColorScale(2)=(relativetime=1.000000,Color=(B=255,G=255,R=255))
+         FadeOutStartTime=2.500000
+         MaxParticles=2
+         SpinCCWorCW=(X=1.000000)
+         SpinsPerSecondRange=(X=(Min=-0.200000,Max=-0.200000),Y=(Min=-0.200000,Max=-0.200000))
+         SizeScale(1)=(relativetime=0.100000,RelativeSize=4.800000)
+         SizeScale(2)=(relativetime=0.120000,RelativeSize=5.000000)
+         SizeScale(3)=(relativetime=0.140000,RelativeSize=4.800000)
+         SizeScale(4)=(relativetime=0.160000,RelativeSize=5.000000)
+         SizeScale(5)=(relativetime=0.700000,RelativeSize=3.000000)
+         SizeScale(6)=(relativetime=1.000000,RelativeSize=2.000000)
+         StartSizeRange=(X=(Min=30.000000,Max=30.000000),Y=(Min=30.000000,Max=30.000000))
+         InitialParticlesPerSecond=4.000000
+         Texture=Texture'XIIICine.effets.mist2'
+         LifetimeRange=(Min=3.000000,Max=3.000000)
+         InitialDelayRange=(Min=0.050000,Max=0.050000)
+         Name="Prock03FioleExploEmitterE"
+     End Object
+     Emitters(4)=SpriteEmitter'XIDPawn.Prock03FioleExploEmitter.Prock03FioleExploEmitterE'
+     Begin Object Class=SpriteEmitter Name=Prock03FioleExploEmitterF
+         UseDirectionAs=PTDU_Normal
+         UseColorScale=True
+         FadeOut=True
+         RespawnDeadParticles=False
+         UseSizeScale=True
+         AutomaticInitialSpawning=False
+         Initialized=True
+         FadeOutStartTime=2.500000
+         MaxParticles=1
+         SizeScale(1)=(relativetime=0.100000,RelativeSize=1.200000)
+         SizeScale(2)=(relativetime=1.000000,RelativeSize=0.700000)
+         StartSizeRange=(X=(Min=200.000000,Max=200.000000),Y=(Min=200.000000,Max=200.000000))
+         InitialParticlesPerSecond=1000.000000
+         DrawStyle=PTDS_Brighten
+         Texture=Texture'XIIICine.effets.mist2'
+         InitialDelayRange=(Min=0.200000,Max=0.200000)
+         Name="Prock03FioleExploEmitterF"
+     End Object
+     Emitters(5)=SpriteEmitter'XIDPawn.Prock03FioleExploEmitter.Prock03FioleExploEmitterF'
+     Begin Object Class=SpriteEmitter Name=Prock03FioleExploEmitterG
+         Acceleration=(X=10.000000,Y=10.000000,Z=-400.000000)
+         UseColorScale=True
+         RespawnDeadParticles=False
+         AutomaticInitialSpawning=False
+         Initialized=True
+         ColorScale(0)=(Color=(B=255,G=255,R=255))
+         ColorScale(1)=(relativetime=0.300000,Color=(B=133,G=194,R=190))
+         ColorScale(2)=(relativetime=0.600000,Color=(B=97,G=173,R=175))
+         ColorScale(3)=(relativetime=1.000000)
+         MaxParticles=40
+         StartLocationOffset=(Z=-50.000000)
+         StartSizeRange=(X=(Min=2.000000,Max=4.000000),Y=(Min=2.000000,Max=4.000000))
+         InitialParticlesPerSecond=200.000000
+         Texture=Texture'XIIICine.effets.etincelle'
+         LifetimeRange=(Min=3.000000,Max=3.000000)
+         StartVelocityRange=(X=(Min=-100.000000,Max=100.000000),Y=(Min=-100.000000,Max=100.000000),Z=(Min=400.000000,Max=800.000000))
+         MaxAbsVelocity=(X=1000.000000,Y=1000.000000)
+         VelocityLossRange=(X=(Min=1.000000,Max=1.000000),Y=(Min=1.000000,Max=1.000000),Z=(Min=1.000000,Max=1.000000))
+         Name="Prock03FioleExploEmitterG"
+     End Object
+     Emitters(6)=SpriteEmitter'XIDPawn.Prock03FioleExploEmitter.Prock03FioleExploEmitterG'
+     Begin Object Class=SpriteEmitter Name=Prock03FioleExploEmitterH
+         Acceleration=(Z=40.000000)
+         FadeOut=True
+         RespawnDeadParticles=False
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         AutomaticInitialSpawning=False
+         Initialized=True
+         ColorScale(0)=(Color=(B=255,G=255,R=255))
+         ColorScale(1)=(relativetime=1.000000,Color=(B=255,G=255,R=255))
+         ColorScaleRepeats=5.000000
+         FadeOutStartTime=0.500000
+         MaxParticles=1
+         StartLocationOffset=(Z=100.000000)
+         SizeScale(0)=(RelativeSize=1.000000)
+         SizeScale(1)=(relativetime=1.000000,RelativeSize=1.100000)
+         SizeScaleRepeats=2.000000
+         StartSizeRange=(X=(Min=50.000000,Max=50.000000),Y=(Min=50.000000,Max=50.000000))
+         InitialParticlesPerSecond=100.000000
+         DrawStyle=PTDS_AlphaBlend
+         Texture=Texture'XIIICine.effets.Blam'
+         LifetimeRange=(Min=0.500000,Max=0.500000)
+         InitialDelayRange=(Min=0.200000,Max=0.200000)
+         Name="Prock03FioleExploEmitterH"
+     End Object
+     Emitters(7)=SpriteEmitter'XIDPawn.Prock03FioleExploEmitter.Prock03FioleExploEmitterH'
+     Begin Object Class=SpriteEmitter Name=Prock03FioleExploEmitterI
+         Acceleration=(Z=10.000000)
+         UseColorScale=True
+         FadeOut=True
+         FadeIn=True
+         RespawnDeadParticles=False
+         SpinParticles=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         AutomaticInitialSpawning=False
+         Initialized=True
+         ColorScale(0)=(Color=(B=255,G=255,R=255))
+         ColorScale(1)=(relativetime=0.400000,Color=(B=97,G=173,R=175))
+         ColorScale(2)=(relativetime=1.000000,Color=(B=51,G=90,R=98))
+         FadeOutStartTime=3.000000
+         FadeInEndTime=1.000000
+         MaxParticles=50
+         StartLocationRange=(X=(Min=-100.000000,Max=100.000000),Y=(Min=-100.000000,Max=100.000000))
+         SpinsPerSecondRange=(X=(Min=0.200000,Max=0.200000),Y=(Min=0.200000,Max=0.200000))
+         SizeScale(1)=(relativetime=0.200000,RelativeSize=2.000000)
+         SizeScale(2)=(relativetime=0.600000,RelativeSize=1.000000)
+         SizeScale(3)=(relativetime=1.000000,RelativeSize=2.000000)
+         StartSizeRange=(X=(Min=5.000000,Max=15.000000),Y=(Min=5.000000,Max=15.000000))
+         InitialParticlesPerSecond=20.000000
+         Texture=Texture'XIIICine.effets.mist2'
+         InitialDelayRange=(Min=1.000000,Max=1.000000)
+         Name="Prock03FioleExploEmitterI"
+     End Object
+     Emitters(8)=SpriteEmitter'XIDPawn.Prock03FioleExploEmitter.Prock03FioleExploEmitterI'
+     Begin Object Class=SpriteEmitter Name=Prock03FioleExploEmitterJ
+         Acceleration=(Z=10.000000)
+         FadeOut=True
+         RespawnDeadParticles=False
+         SpinParticles=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         AutomaticInitialSpawning=False
+         Initialized=True
+         FadeOutStartTime=2.000000
+         MaxParticles=4
+         SpinsPerSecondRange=(X=(Min=-0.100000,Max=0.200000),Y=(Min=-0.100000,Max=0.200000))
+         SizeScale(1)=(relativetime=0.100000,RelativeSize=2.000000)
+         SizeScale(2)=(relativetime=1.000000,RelativeSize=1.000000)
+         StartSizeRange=(X=(Min=20.000000,Max=40.000000),Y=(Min=20.000000,Max=40.000000))
+         InitialParticlesPerSecond=50.000000
+         Texture=Texture'XIIICine.effets.mist2'
+         StartVelocityRange=(X=(Min=-10.000000,Max=10.000000),Y=(Min=-10.000000,Max=10.000000))
+         Name="Prock03FioleExploEmitterJ"
+     End Object
+     Emitters(9)=SpriteEmitter'XIDPawn.Prock03FioleExploEmitter.Prock03FioleExploEmitterJ'
+}

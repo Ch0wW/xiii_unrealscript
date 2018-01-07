@@ -1,0 +1,53 @@
+
+
+defaultproperties
+{
+     tBackGround=Texture'XIIIMenuStart.Options.fond_shoot'
+     tLogo=Texture'XIIIMenuStart.Controle_PC.Shoot'
+     tOnomatop=Texture'XIIICine.effets.Bang'
+     tIconL=Texture'XIIIMenuStart.Control_Console.fleche_gauche'
+     tIconR=Texture'XIIIMenuStart.Control_Console.fleche_droite'
+     FistsText="Fists"
+     TitleText="Shoot Options"
+     WeaponClasses(1)=Class'XIII.TKnifePick'
+     WeaponClasses(2)=Class'XIII.BerettaPick'
+     WeaponClasses(3)=Class'XIII.MagnumPick'
+     WeaponClasses(4)=Class'XIII.GrenadPick'
+     WeaponClasses(5)=Class'XIII.ArbaletePick'
+     WeaponClasses(6)=Class'XIII.ArbaleteX3Pick'
+     WeaponClasses(7)=Class'XIII.LHarponPick'
+     WeaponClasses(8)=Class'XIII.FusilPompePick'
+     WeaponClasses(9)=Class'XIII.FusilChassePick'
+     WeaponClasses(10)=Class'XIII.M16Pick'
+     WeaponClasses(11)=Class'XIII.KalashPick'
+     WeaponClasses(12)=Class'XIII.MiniUziPick'
+     WeaponClasses(13)=Class'XIII.FusilSnipePick'
+     WeaponClasses(14)=Class'XIII.BazookPick'
+     WeaponClasses(15)=Class'XIII.M60Pick'
+     WeaponClasses(16)=Class'XIII.FGrenadPick'
+     WeaponClasses(17)=Class'XIIIMP.FlashBangPick'
+     WeaponClasses(18)=Class'XIIIMP.XIIIMPBombPick'
+     FirstWeaponIndex(1)=9
+     NbWeaponsOnPage(0)=9
+     NbWeaponsOnPage(1)=10
+     WeaponCode(1)=1
+     WeaponCode(2)=2
+     WeaponCode(3)=3
+     WeaponCode(4)=4
+     WeaponCode(5)=6
+     WeaponCode(6)=7
+     WeaponCode(7)=8
+     WeaponCode(8)=9
+     WeaponCode(9)=10
+     WeaponCode(10)=11
+     WeaponCode(11)=12
+     WeaponCode(12)=13
+     WeaponCode(13)=14
+     WeaponCode(14)=15
+     WeaponCode(15)=16
+     WeaponCode(16)=5
+     WeaponCode(17)=17
+     WeaponCode(18)=24
+     bForceHelp=True
+     bCenterInGame=True
+}
